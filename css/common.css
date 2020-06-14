@@ -1,0 +1,234 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    font-family: PingFangSC-Semibold, sans-serif;
+}
+
+.container div {
+    box-sizing: border-box;
+}
+
+.container {
+    /*min-height: 14.4rem;*/
+    max-height: 100vh;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    overflow: hidden;
+}
+
+.green {
+    color: #2CE449 !important;
+}
+
+.header {
+    height: 1rem;
+    background-image: radial-gradient(50% 174%, #9F8E6A 0%, #634711 100%);
+    font-family: PingFang-SC-Heavy;
+    font-size: .48rem;
+    color: #FFFFFF;
+    padding-left: .48rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-data {
+    height: 2rem;
+    background: #16191b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 .48rem;
+}
+
+.main-data .item {
+
+}
+
+.main-data .item .label {
+    font-size: .28rem;
+    color: #E7E7E7;
+    line-height: .4rem;
+}
+
+.main-data .item .value {
+    font-size: .48rem;
+    line-height: .60rem;
+    margin-top: .03rem;
+    color: #fff;
+}
+
+.chart-container {
+    flex: 1;
+    display: flex;
+}
+
+.chart-container .left {
+    width: 10.3rem;
+    /*width: 25.6rem;*/
+    border-right: .06rem solid #322D2C;
+    padding: .48rem .48rem 0;
+}
+
+.chart-container .right {
+    flex: 1;
+    display: flex;
+}
+
+.chart-container .title {
+    font-family: PingFangSC-Medium;
+    font-size: .28rem;
+    color: #fff;
+    line-height: .4rem;
+}
+
+.chart-container table {
+    width: 100%;
+    font-size: .24rem;
+    color: #fff;
+    border-collapse: collapse;
+}
+
+.chart-container .my-table tr {
+    height: .6rem;
+}
+
+.chart-container .my-table thead {
+    background: #322D2C;
+    color: #FFFFFF;
+}
+
+.chart-container .left .table table {
+    margin-top: .35rem;
+}
+
+.chart-container .left .chart {
+    margin-top: 1rem;
+}
+
+#cont-by-brand {
+    height: 4.8rem;
+    margin-left: -.48rem;
+}
+
+/**************************************************** 公用 ***************************************************/
+.g-label .label-text {
+    display: flex;
+    /*width: .84rem;*/
+    padding: 0 .06rem;
+    height: .44rem;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: .23rem;
+    color: #000;
+    border-radius: .08rem;
+}
+
+.g2-legend {
+    max-width: none !important;
+}
+
+.g2-legend-list {
+    border-collapse: collapse;
+    font-size: .24rem;
+    font-family: PingFangSC-Regular;
+}
+
+.g2-legend-list-item {
+    display: table-row !important;
+    color: #fff !important;
+    height: .56rem;
+}
+
+.g2-legend-marker {
+    width: .12rem !important;
+    height: .12rem !important;
+    margin-right: .1rem !important;
+}
+
+.g2-legend-list-item td:first-of-type {
+    padding-right: .3rem;
+}
+
+/**************************************************** 公用 end ***************************************************/
+
+.right-table {
+    width: 9.6rem;
+    padding: .48rem 0 0 .48rem;
+}
+
+.right-table .data {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: .12rem;
+    padding-right: 1rem;
+}
+
+.right-table .data .item {
+}
+
+.right-table .data .item .label {
+    font-size: .16rem;
+    color: #E7E7E7;
+    line-height: .2rem;
+}
+
+.right-table .data .item .value {
+    font-size: .28rem;
+    line-height: .32rem;
+    margin-top: .03rem;
+}
+
+.right-table .my-table {
+    margin-top: .2rem;
+}
+
+.right-chart {
+    padding: .8rem 0 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-chart .chart-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-chart .chart-box .title {
+    font-size: .24rem;
+    line-height: .33rem;
+    padding-left: .48rem;
+}
+
+.right-chart .chart-box .chart {
+    flex: 1;
+}
+
+.right-chart .g-label .label-text {
+    /*width: auto;*/
+    height: .36rem;
+}
+
+.right-chart .g2-legend-list {
+    font-size: .2rem;
+    font-family: PingFangSC-Regular;
+}
+
+.right-chart .g2-legend-list-item {
+    height: .48rem;
+}
+
+.right-chart .g2-legend-marker {
+    margin-right: .1rem !important;
+}
+
+.g2-legend-list-item td:first-of-type {
+    padding-right: .22rem;
+}

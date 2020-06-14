@@ -3,8 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/common.css"/>
+  <script src="js/flexible.js"></script>
 </head>
 <body>
-  test1
+<div class="container">
+  <div class="header">CHC CBEC 618 SALES TRACKING</div>
+  <div class="main-data">
+    <div class="item">
+      <div class="label">Total GMV</div>
+      <div class="value gmv" style="color:#E4D8BC;"></div>
+    </div>
+    <div class="item">
+      <div class="label">Total Volume</div>
+      <div class="value volume green"></div>
+    </div>
+    <div class="item">
+      <div class="label">% of Base Target</div>
+      <div class="value base_target"></div>
+    </div>
+    <div class="item">
+      <div class="label">Evol % vs .618 Y19</div>
+      <div class="value stretch_target"></div>
+    </div>
+    <div class="item">
+      <div class="label">% of Stretch Target</div>
+      <div class="value evol"></div>
+    </div>
+  </div>
+  <div class="chart-container">
+    <div class="left">
+      <div class="table">
+        <div class="title">BRAND GMV OVERVIEW</div>
+        <table class="my-table">
+          <thead>
+          <tr align="center">
+            <th>Rank</th>
+            <th>Brand</th>
+            <th>GMV</th>
+            <th>cont%</th>
+            <th>% of Stretch Target</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="chart">
+        <div class="title">CONT % BY BRAND</div>
+        <div id="cont-by-brand"></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right-table">
+        <div class="table strategic-box">
+          <div class="title">STRATEGIC PLATFORM</div>
+          <div class="data">
+            <div class="item">
+              <div class="label">GMV</div>
+              <div class="value gmv" style="color:#E2C59F;"></div>
+            </div>
+            <div class="item">
+              <div class="label">Targat</div>
+              <div class="value target"></div>
+            </div>
+            <div class="item">
+              <div class="label">cont%</div>
+              <div class="value cont"></div>
+            </div>
+            <div class="item">
+              <div class="label">Days left</div>
+              <div class="value days"></div>
+            </div>
+          </div>
+          <table class="my-table">
+            <thead>
+            <tr align="center">
+              <th>Rank</th>
+              <th>Platform</th>
+              <th>GMV</th>
+              <th>cont%</th>
+              <th>% of Stretch Target</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="table dg-box" style="margin-top: .24rem;">
+          <div class="title">D&G PLATFORM</div>
+          <div class="data">
+            <div class="item">
+              <div class="label">GMV</div>
+              <div class="value gmv" style="color:#E2C59F;"></div>
+            </div>
+            <div class="item">
+              <div class="label">Targat</div>
+              <div class="value target"></div>
+            </div>
+            <div class="item">
+              <div class="label">cont%</div>
+              <div class="value cont"></div>
+            </div>
+            <div class="item">
+              <div class="label">Days left</div>
+              <div class="value days"></div>
+            </div>
+          </div>
+          <table class="my-table">
+            <thead>
+            <tr align="center">
+              <th>Rank</th>
+              <th>Platform</th>
+              <th>GMV</th>
+              <th>cont%</th>
+              <th>% of Stretch Target</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="right-chart">
+        <div class="chart-box">
+          <div class="title">STRATEGIC</div>
+          <div class="chart" id="strategic"></div>
+        </div>
+        <div class="chart-box">
+          <div class="title">D&G</div>
+          <div class="chart" id="dg"></div>
+        </div>
+        <div class="chart-box" style="margin-top: .2rem;">
+          <div class="title">STRATEGIC VS D&G</div>
+          <div class="chart" id="strategic-vs-dg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g2-3.5.1/dist/g2.min.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.10.1/dist/data-set.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
